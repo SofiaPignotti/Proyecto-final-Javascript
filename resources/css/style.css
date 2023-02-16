@@ -1,0 +1,27 @@
+      h1{
+        text-align: center;
+      }
+      form{
+        text-align: center;
+      }
+      .claseFormulario{
+        padding-bottom: 20px;
+      }
+      #botonDeEnvio{
+        font-size: 23px;
+      }
+      td,th{
+        border: solid red 1px;
+        padding: 10px;
+        text-align: center;
+      }
+      .tableFormat table{
+        margin: 10px auto;
+      }
+      #botonDeEnvio{
+        margin: 20px;
+      }
+      .city,.value, .weather-icons{
+        font-size: 25px;
+        text-align: center;
+      }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mi economia</title>
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+             
+  </head>
+  <body>
+    <div id="contenedor">
+      <div class="weather-icons">
+      <i class="material-icons">brightness_5</i>
+      <i class="material-icons">brightness_2</i>
+      </div>
+      <div class="location">
+        <div class="city"></div>
+      </div>
+      <div class="temperature">
+        <div class="value">
+      </div>
+    </div>
+    <h1>Historial de transacciones</h1>
+    <div class="row">
+      <div class="col l7 offset -l1 s12">
+        <table id="transactionTable">
+          <tr>
+            <th>
+              Tipo
+            </th>
+            <th>
+              Descripcion
+            </th>
+            <th>
+              Monto
+            </th>
+            <th>
+              Categoria
+            </th>
+            <th>
+              Eliminar
+            </th>
+            <tr>
+          </tr>
+          </tr>
+          <tr>
+  
+          </tr>
+        </table>
+    </div>
+      <div class="col l5 s12">
+        <div class="col l5 offset -l1 s12">
+          <form id="transactionForm">
+            <div class="claseFormulario">
+              <span>Transacción</span>
+              <p>
+                <label>
+                  <i class="material-icons">add</i>
+                  <input class="with-gap" id="ingreso" name="transactionType" type="radio" checked value="Ingreso" />
+                  <span>Ingreso</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <i class="material-icons">indeterminate_check_box</i>
+                  <input class="with-gap" id="egreso" name="transactionType" type="radio" checked value="Egreso" />
+                  <span>Egreso</span>
+                </label>
+              </p>
+            </div>
+            <div class="input-field">
+              <label for="description" >Descripcion</label>
+              <input type="text" id="description" name="description" class="validate" required>
+            </div>
+            <div class="input-field">
+              <label for="mount">Monto</label>
+              <input type="number" id="mount" min="0" name="mount" class="validate" required>
+            </div>
+            <div>
+              <label for="category">Categoria</label>
+              <select class="browser-default" name="category" id="category">
+               
+              </select>
+            </div>
+            <div>
+              <button class="btn waves-effect waves-light" type="submit" id="botonDeEnvio">Añadir
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./resources//Js//script.js"></script>
+  </body>
+</html>
